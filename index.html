@@ -46,7 +46,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       import {Scene} from './js/render/scenes/scene.js';
       import {Renderer, createWebGLContext} from './js/render/core/renderer.js';
       import {Node} from './js/render/core/node.js';
-      import {Gltf2Node} from './js/render/nodes/gltf2.js';
+      import {Obj2Node} from './js/render/nodes/obj2.js';
       import {DropShadowNode} from './js/render/nodes/drop-shadow.js';
       import {vec3} from './js/render/math/gl-matrix.js';
       import {Ray} from './js/render/math/ray.js';
@@ -67,10 +67,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       arObject.visible = false;
       scene.addNode(arObject);
 
-      let flower = new Gltf2Node({url: 'media/gltf/home-theater/home-theater.gltf'});
+      let flower = new Obj2Node({url: 'media/obj/pizza/pizza.obj'});
       arObject.addNode(flower);
 
-      let reticle = new Gltf2Node({url: 'media/gltf/reticle/reticle.gltf'});
+      let reticle = new Obj2Node({url: 'media/gltf/reticle/reticle.gltf'});
       reticle.visible = false;
       scene.addNode(reticle);
 
